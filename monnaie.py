@@ -13,7 +13,7 @@ def compute(pieces_possibles, reste_a_rendre) -> tuple[int, list[int]]:
     nb, rendu = compute(pieces_possibles, reste_a_rendre - piece)
     return nb + 1, [piece] + rendu
 
-pieces_table = [1, 2, 5, 10, 20, 50]
-reste_a_rendre = 68
+pieces_table = [1, 3, 4, 10, 20, 50]
+reste_a_rendre = 6
 
 print(compute(pieces_table, reste_a_rendre))
